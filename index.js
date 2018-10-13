@@ -8,14 +8,14 @@ let CookieManager;
 
 if (Platform.OS === 'ios') {
     invariant(RNCookieManagerIOS,
-        'react-native-cookies: Add RNCookieManagerIOS.h and RNCookieManagerIOS.m to your Xcode project');
+        'react-native-cookies-demisto: Add RNCookieManagerIOS.h and RNCookieManagerIOS.m to your Xcode project');
     CookieManager = RNCookieManagerIOS;
 } else if (Platform.OS === 'android') {
     invariant(RNCookieManagerAndroid,
-        'react-native-cookies: Import libraries to android "react-native link react-native-cookies"');
+        'react-native-cookies-demisto libraries to android "react-native link react-native-cookies"');
     CookieManager = RNCookieManagerAndroid;
 } else {
-    invariant(CookieManager, 'react-native-cookies: Invalid platform. This library only supports Android and iOS.');
+    invariant(CookieManager, 'react-native-cookies-demisto: Invalid platform. This library only supports Android and iOS.');
 }
 
 const functions = [
